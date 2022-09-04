@@ -12,10 +12,9 @@
     font-family: "BNazanin";
 }
 body,html{
-    overflow-x: hidden !important;
     direction: rtl;
     background: #FFFFFF;
-  
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -799,12 +798,10 @@ footer{
     .footer-links h4{
         font-size: 1.5rem;
     }
-    .foot-1{
-        padding: 1rem 24px !important;
-        grid-template-columns: repeat(2,1fr);
-    }
+   .foot-logo{
+    justify-self: center;
+   }
     .enamad{
-        grid-column: 1 / span 2;
         margin-top: 1rem;
         justify-self: center;
     }
@@ -813,6 +810,7 @@ footer{
    }
    .social{
     justify-self: center;
+    margin-top: 2rem;
    }
    .address p{
     text-align: right;
@@ -908,7 +906,7 @@ justify-content: center;
 /* Media */
 @media (max-width:500px){
   
-    .ads,.ads2,.products-group,.footer-info-boxes,.foot-2,.foot-3-box{
+    .ads,.ads2,.products-group,.footer-info-boxes,.foot-2,.foot-1,.foot-3-box{
         grid-template-columns: 1fr !important;
     }
     .product::before{
@@ -928,10 +926,7 @@ footer{
     .footer-links h4{
         font-size: 1.5rem;
     }
-    .foot-1{
-        padding: 1rem 24px !important;
-        grid-template-columns: 1fr;
-    }
+   
    
    .address{
     grid-row: 1;
