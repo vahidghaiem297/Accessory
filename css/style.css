@@ -607,6 +607,7 @@ div.container{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+   
 }
 .accessory-text{
     color: #08113a;
@@ -680,9 +681,7 @@ border-radius: 50px;
     text-align: center;
     margin: 3rem 0 0.5rem 0;
 }
-#main{
-    margin: 3rem 0;
-}
+
 
 
 /* After Blog End*/
@@ -906,7 +905,10 @@ justify-content: center;
 /* Media */
 @media (max-width:500px){
   
-    .ads,.ads2,.products-group,.footer-info-boxes,.foot-2,.foot-1,.foot-3-box{
+    .accessory-box h3{
+        font-size: 1rem;
+    }
+    .ads,.ads2,.products-group,.footer-info-boxes,.foot-2,.foot-3-box{
         grid-template-columns: 1fr !important;
     }
     .product::before{
@@ -926,13 +928,19 @@ footer{
     .footer-links h4{
         font-size: 1.5rem;
     }
-   
-   
+   .foot-logo{
+    justify-self: center;
+   }
+    .enamad{
+        margin-top: 1rem;
+        justify-self: center;
+    }
    .address{
     grid-row: 1;
    }
    .social{
     justify-self: center;
+    margin-top: 2rem;
    }
    .address p{
     text-align: right;
