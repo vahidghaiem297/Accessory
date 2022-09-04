@@ -12,9 +12,10 @@
     font-family: "BNazanin";
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     direction: rtl;
     background: #FFFFFF;
+    scroll-behavior: smooth;
 }
 ul{
     list-style: none;
@@ -735,32 +736,77 @@ border-radius: 50px;
     visibility: visible;
     opacity: 1;
 }
+.fullwidth-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 600;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+.full-nav{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.full-nav a{
+    color: #FFF;
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
+.close{
+    color: #FFF;
+    font-size: 3rem;
+    position: absolute;
+    right: 35px;
+    top:35px;
+    z-index: 600;
+}
+.active{
+    transform: scale(1) !important;
+}
 
 /* Tooltip End*/
 /* Media */
 @media(max-width:768px){
-    .ads,.ads2,.products-group,.foot-1,.footer-info-boxes,.foot-2,.foot-3-box{
+    .ads,.ads2,.products-group,.footer-info-boxes,.foot-2,.foot-3-box{
         grid-template-columns: 1fr !important;
     }
     .product::before{
         border-radius: 50px;
         height: 98.9%;
     }
-
-    .foot-logo{
-        justify-self: center;
-    }
+footer{
+    padding: 1rem 24px;
+}
+   
     .footer-links{
         justify-self: center;
         text-align: center;
         margin-top: 1rem;
+      
+    }
+    .footer-links h4{
+        font-size: 1.5rem;
     }
     .foot-1{
-        padding: 20px 24px;
+        padding: 1rem 24px !important;
+        grid-template-columns: repeat(2,1fr);
     }
     .enamad{
-        justify-self: center;
+        grid-column: 1 / span 2;
         margin-top: 1rem;
+        justify-self: center;
     }
    .address{
     grid-row: 1;
@@ -846,6 +892,17 @@ justify-content: center;
     display: none;
 }
 
+.tooltips{
+    z-index: 2;
+}
+.tooltip-link > li a h4{
+    padding: 0;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+.tooltip-content::after{
+    top: -8.9%;
+}
 
 }
 /* Media End*/

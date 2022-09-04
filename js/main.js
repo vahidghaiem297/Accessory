@@ -71,3 +71,12 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+var openSideBar = document.getElementById("mobile");
+openSideBar.onclick = function(){
+    document.getElementById("sidebar").classList.add("active");
+}
+var closeSideBar = document.getElementById("close");
+closeSideBar.onclick = function(){
+    document.getElementById("sidebar").classList.remove("active");
+} 
