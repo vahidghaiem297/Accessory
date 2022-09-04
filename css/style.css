@@ -11,10 +11,10 @@
     box-sizing: border-box;
     font-family: "BNazanin";
 }
-body{
+body,html{
     overflow-x: hidden !important;
-    direction: rtl !important;
-    background: #FFFFFF !important;
+    direction: rtl;
+    background: #FFFFFF;
   
 }
 ul{
@@ -930,13 +930,9 @@ footer{
     }
     .foot-1{
         padding: 1rem 24px !important;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
     }
-    .enamad{
-        grid-column: 1 / span 2;
-        margin-top: 1rem;
-        justify-self: center;
-    }
+   
    .address{
     grid-row: 1;
    }
