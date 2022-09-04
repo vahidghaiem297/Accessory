@@ -1,34 +1,3 @@
-slideIndex = 1;
-showSlides(slideIndex);
-
-function plus(n) {
-    showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var slides = document.getElementsByClassName("slides");
-    var dots = document.getElementsByClassName('dots');
-   
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    for (var i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        
-    }
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-        
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
 
 $('#main').owlCarousel({
     rtl:true,
@@ -40,7 +9,7 @@ $('#main').owlCarousel({
             items:1
         },
         600:{
-            items:2
+            items:1
         },
         1000:{
             items:4
