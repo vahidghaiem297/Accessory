@@ -777,7 +777,7 @@ border-radius: 50px;
 /* Tooltip End*/
 /* Media */
 @media (max-width:1024px){
-    .ads,.ads2,.products-group,.footer-info-boxes,.foot-2,.foot-3-box{
+    .ads,.ads2,.products-group,.footer-info-boxes,.foot-2,.foot-1,.foot-3-box{
         grid-template-columns: 1fr !important;
     }
     .product::before{
@@ -908,7 +908,7 @@ justify-content: center;
     .accessory-box h3{
         font-size: 1rem;
     }
-    .ads,.ads2,.products-group,.footer-info-boxes,.foot-2,.foot-3-box{
+    .ads,.ads2,.products-group,.foot-1,.footer-info-boxes,.foot-2,.foot-3-box{
         grid-template-columns: 1fr !important;
     }
     .product::before{
